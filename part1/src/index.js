@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom'
 
 const Header = (props) => <h1>{props.course}</h1>
 
+const Part = (props) => <p> The {props.part} have {props.exercises} exercises</p>
+
 const Content = (props) => {return (
   <div>
-    <p> The {props.part1} have {props.exercises1} exercises</p>
-    <p> The {props.part2} have {props.exercises2} exercises</p>
-    <p> The {props.part3} have {props.exercises3} exercises</p>
+    <Part part={props.part1} exercises={props.exercises1}/>
+    <Part part={props.part2} exercises={props.exercises2}/>
+    <Part part={props.part3} exercises={props.exercises3}/>
   </div>
   )}
 
