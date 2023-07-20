@@ -6,6 +6,8 @@ import axios from 'axios'
 import InputTabla from './components/InputTabla'
 import ViewCountries from './components/ViewCountries'
 
+/*FALTAN EJERCICIOS 2.13 Y 2.14*/
+
 const App = () => {
   const [inputCountrie, setCountries] = useState ('')
   const [allCountries, setAllCountries] = useState ([])
