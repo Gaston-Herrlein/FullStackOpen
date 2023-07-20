@@ -51,11 +51,6 @@ const App = () => {
     setSeachPerson(event.target.value);
   };
 
-//============================================================================================================================================
-//ME QUEDE ACA TENGO QUE VOLVER A VER COMO CAMBIO LOS ESTILOS DE UN OBJETO SIN CAMBIAR EL RESTO Y SI QUE
-//EXPLOTE LA APP
-//============================================================================================================================================
-
   const createNewPerson = (event) => {
     event.preventDefault();
     if (persons.filter((person) => person.name === newName).length !== 0) {
